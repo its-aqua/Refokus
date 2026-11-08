@@ -39,17 +39,17 @@ const Work = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-3">
       <div className="relative max-w-5xl mx-auto text-center">
         <h1 className="text-[30vw] text-white font-normal select-none leading-none">
           work
         </h1>
-        <div className="absolute top-0 w-full h-full">
+        <div className="absolute top-0 w-full h-full ">
           {images.map(
             (elem, index) =>
               elem.isActive && (
                 <img
-                  className="w-52 h-52 rounded-lg absolute translate-x-[-50%] translate-y-[-50%]"
+                  className="w-48 h-48 rounded-lg absolute translate-x-[-50%] translate-y-[-50%]"
                   src={elem.url}
                   style={{ top: elem.top, left: elem.left }}
                   alt=""
