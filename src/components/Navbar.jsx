@@ -3,7 +3,7 @@ import prop from "/src/assets/prop.png";
 
 const Navbar = () => {
   return (
-    <div className="flex max-w-4xl mx-auto py-6 items-center justify-between border-b-[1px] border-zinc-600">
+    <div className="flex max-w-5xl mx-auto pt-6 pb-3 items-center justify-between border-b-[1px] border-zinc-600">
      <div className="nleft flex items-center">
        <img className="h-15 w-25 object-cover rounded-md " src={prop} alt="" />
       <div className="links text-white font-medium flex gap-10 ml-25">
