@@ -1,4 +1,5 @@
 import Cards from "./components/Cards"
+import Footer from "./components/Footer"
 import Marqees from "./components/Marqees"
 import Navbar from "./components/Navbar"
 import Products from "./components/Products"
@@ -14,6 +15,7 @@ const App = () => {
       <Products />
       <Marqees />
       <Cards />
+      <Footer />
     </div>
   )
 }
