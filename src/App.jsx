@@ -1,3 +1,4 @@
+import Cards from "./components/Cards"
 import Marqees from "./components/Marqees"
 import Navbar from "./components/Navbar"
 import Products from "./components/Products"
@@ -12,6 +13,7 @@ const App = () => {
       <Stripes />
       <Products />
       <Marqees />
+      <Cards />
     </div>
   )
 }
