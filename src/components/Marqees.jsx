@@ -30,8 +30,8 @@ const Marqees = () => {
 
   return (
     <div className="py-20 mt-18">
-      {images.map((item) => (
-        <Marqee imgurl={item} />
+      {images.map((item, index) => (
+        <Marqee key={index} imgurl={item} />
       ))}
     </div>
   );
