@@ -1,8 +1,9 @@
+import { motion } from "motion/react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-const Card = ({ width, start, para, hover="none" }) => {
+const Card = ({ width, start, para, hover="false" }) => {
   return (
-    <div className={`bg-zinc-700 p-5 rounded-xl ${width} hover:${hover} min-h-80 flex flex-col justify-between`}>
+    <motion.div whileHover={{backgroundColor: hover ==="true"&& "#7443ff", padding: "25px"}} className={`bg-zinc-700 p-5 rounded-xl ${width} min-h-80 flex flex-col justify-between`}>
       <div className="w-full">
         <div className="w-full flex items-center justify-between">
           <h3>Up next: Culture</h3>
@@ -28,7 +29,7 @@ const Card = ({ width, start, para, hover="none" }) => {
           </p>
         )}  
       </div>
-    </div>
+    </motion.div>
   );
 };
 

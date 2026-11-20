@@ -39,7 +39,7 @@ const Work = () => {
       isActive: false,
     },
   ]);
-  const { scrollY, scrollXProgress, scrollX, scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll();
   scrollYProgress.on("change", (data) => {
     const imagesShow = (arr) => {
       setImages((prev) =>
